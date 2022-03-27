@@ -1,5 +1,7 @@
 {
   "name": "chatmobile",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
