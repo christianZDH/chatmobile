@@ -1,4 +1,7 @@
-<swiper [config]="config">
+<swiper
+  class="animate__animated animate__fadeIn animate__faster"
+  [config]="config"
+>
   <ng-template *ngFor="let group of groups" swiperSlide>
     <div class="swiper-slide">
       <div class="group">

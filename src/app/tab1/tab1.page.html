@@ -28,7 +28,10 @@
   <app-rectangle></app-rectangle>
   <app-groups-vertical-slide [groups]="groups"></app-groups-vertical-slide>
   <div class="line"></div>
-  <ion-list color="secondary">
+  <ion-list
+    class="animate__animated animate__fadeIn animate__fast"
+    color="secondary"
+  >
     <app-item-chat *ngFor="let item of chats" [itemChat]="item"></app-item-chat>
   </ion-list>
 

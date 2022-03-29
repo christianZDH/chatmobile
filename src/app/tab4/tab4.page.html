@@ -23,7 +23,11 @@
 
 <ion-content [fullscreen]="true" color="secondary">
   <app-rectangle></app-rectangle>
-  <ion-item lines="none" color="secondary">
+  <ion-item
+    class="animate__animated animate__fadeIn animate__fast"
+    lines="none"
+    color="secondary"
+  >
     <ion-avatar slot="start">
       <img src="assets/images/profile.png" />
     </ion-avatar>
@@ -35,7 +39,7 @@
     </ion-text>
   </ion-item>
 
-  <ion-card>
+  <ion-card class="animate__animated animate__fadeIn animate__fast">
     <ion-card-content>
       <ion-item lines="none" class="ion-margin-bottom">
         <ion-icon slot="start" color="primary" name="moon-outline"></ion-icon>
