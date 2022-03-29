@@ -1,0 +1,16 @@
+<swiper [config]="config">
+  <ng-template *ngFor="let group of groups" swiperSlide>
+    <div class="swiper-slide">
+      <div class="group">
+        <ion-avatar class="ion-activatable ripple-parent">
+          <ion-img [src]="group.img"></ion-img>
+          <ion-chip *ngIf="group.live" class="statusLive" mode="ios">
+            <ion-label>LIVE</ion-label>
+          </ion-chip>
+          <ion-ripple-effect></ion-ripple-effect>
+        </ion-avatar>
+        <ion-label class="title">{{ group.title | titlecase }}</ion-label>
+      </div>
+    </div>
+  </ng-template>
+</swiper>

@@ -1,0 +1,21 @@
+<ion-item color="secondary" class="transparent" lines="none" button>
+  <ion-avatar slot="start">
+    <ion-img [src]="itemChat.img"></ion-img>
+    <div *ngIf="itemChat.status" class="status"></div>
+  </ion-avatar>
+  <ion-text>
+    <ion-label class="text1">{{ itemChat.title | titlecase }}</ion-label>
+    <ion-label
+      class="text2 ion-text-wrap"
+      style="margin-top: 5px"
+      color="medium"
+      >{{ itemChat.lastMessage }}</ion-label
+    >
+  </ion-text>
+  <ion-text class="moreInfo">
+    <ion-label color="medium" class="text3">{{ itemChat.time }}</ion-label>
+    <ion-chip mode="ios" *ngIf="itemChat.unRead > 0">
+      <ion-label>{{ itemChat.unRead }}</ion-label>
+    </ion-chip>
+  </ion-text>
+</ion-item>

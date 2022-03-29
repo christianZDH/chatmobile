@@ -1,0 +1,30 @@
+ion-item {
+  padding: 8px 0 10px 0;
+  ion-avatar {
+    width: 49px;
+    height: 49px;
+  }
+  .status {
+    position: relative;
+    border-radius: 50%;
+    width: 9.72px;
+    height: 9.72px;
+    background-color: #4ce417;
+    bottom: 10px;
+    left: 35px;
+    border: 1px solid white;
+  }
+
+  .moreInfo {
+    text-align: end;
+    position: absolute;
+    top: 0;
+    right: 12px;
+
+    ion-chip {
+      --background: var(--ion-color-primary-tint);
+      --color: var(--ion-color-primary-contrast);
+      height: 20px;
+    }
+  }
+}
