@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ChatsI } from '../../tab1/tab1.page';
+import { ChatsI } from 'src/app/interfaces/chat.interface';
 
 @Component({
   selector: 'app-item-chat',

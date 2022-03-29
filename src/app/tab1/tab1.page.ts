@@ -1,19 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
-export interface ChatsI {
-  img: string;
-  title: string;
-  lastMessage: string;
-  time: string;
-  unRead: number;
-  status: boolean;
-}
-
-export interface GroupI {
-  title: string;
-  img: string;
-  live: boolean;
-}
+import { ChatsI } from '../interfaces/chat.interface';
+import { GroupVerticalSlideI } from '../interfaces/group.interface';
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -21,7 +8,7 @@ export interface GroupI {
 })
 export class Tab1Page implements OnInit {
   chats: ChatsI[] = [];
-  groups: GroupI[] = [];
+  groups: GroupVerticalSlideI[] = [];
   constructor() {}
 
   ngOnInit(): void {

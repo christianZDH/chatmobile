@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { GroupI } from 'src/app/tab1/tab1.page';
 import { SwiperOptions } from 'swiper';
+import { GroupVerticalSlideI } from '../../interfaces/group.interface';
 
 @Component({
   selector: 'app-groups-vertical-slide',
@@ -8,7 +8,7 @@ import { SwiperOptions } from 'swiper';
   styleUrls: ['./groups-vertical-slide.component.scss'],
 })
 export class GroupsVerticalSlideComponent implements OnInit {
-  @Input() groups: GroupI[];
+  @Input() groups: GroupVerticalSlideI[];
 
   config: SwiperOptions = {
     slidesPerView: 4.5,
