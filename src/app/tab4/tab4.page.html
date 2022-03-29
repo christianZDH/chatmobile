@@ -45,88 +45,18 @@
 
       <div class="line"></div>
 
-      <ion-item lines="none" detail button>
-        <ion-icon slot="start" color="primary" name="person-outline"></ion-icon>
+      <ion-item
+        *ngFor="let option of options"
+        lines="none"
+        [detail]="option.detail"
+        button
+      >
+        <ion-icon slot="start" color="primary" [name]="option.icon"></ion-icon>
         <ion-text>
-          <ion-label class="text4">Account</ion-label>
-          <ion-label class="text4" color="medium">Name, City, Phone</ion-label>
-        </ion-text>
-      </ion-item>
-
-      <ion-item lines="none" detail button>
-        <ion-icon
-          slot="start"
-          color="primary"
-          name="notifications-outline"
-        ></ion-icon>
-        <ion-text>
-          <ion-label class="text4">Notifications</ion-label>
-        </ion-text>
-      </ion-item>
-
-      <ion-item lines="none" detail button>
-        <ion-icon
-          slot="start"
-          color="primary"
-          name="lock-closed-outline"
-        ></ion-icon>
-        <ion-text>
-          <ion-label class="text4">Security and Privacy</ion-label>
-        </ion-text>
-      </ion-item>
-
-      <ion-item lines="none" detail button>
-        <ion-icon
-          slot="start"
-          color="primary"
-          name="pie-chart-outline"
-        ></ion-icon>
-        <ion-text>
-          <ion-label class="text4">Storage</ion-label>
-        </ion-text>
-      </ion-item>
-
-      <ion-item lines="none" detail button>
-        <ion-icon slot="start" color="primary" name="person-outline"></ion-icon>
-        <ion-text>
-          <ion-label class="text4">Account</ion-label>
-          <ion-label class="text4" color="medium">Name, City, Phone</ion-label>
-        </ion-text>
-      </ion-item>
-
-      <ion-item lines="none" detail button>
-        <ion-icon
-          slot="start"
-          color="primary"
-          name="chatbubbles-outline"
-        ></ion-icon>
-        <ion-text>
-          <ion-label class="text4">Chats</ion-label>
+          <ion-label class="text4">{{ option.title }}</ion-label>
           <ion-label class="text4" color="medium"
-            >Themes and Personalization</ion-label
+            >{{ option.subtitle }}</ion-label
           >
-        </ion-text>
-      </ion-item>
-
-      <ion-item lines="none" detail button>
-        <ion-icon
-          slot="start"
-          color="primary"
-          name="phone-portrait-outline"
-        ></ion-icon>
-        <ion-text>
-          <ion-label class="text4">Devices</ion-label>
-        </ion-text>
-      </ion-item>
-
-      <ion-item lines="none" button>
-        <ion-icon
-          slot="start"
-          color="primary"
-          name="alert-circle-outline"
-        ></ion-icon>
-        <ion-text>
-          <ion-label class="text4">Help</ion-label>
         </ion-text>
       </ion-item>
     </ion-card-content>
