@@ -1,0 +1,15 @@
+<ion-item lines="none" detail button>
+  <ion-avatar [ngClass]="{ border: group.live }">
+    <ion-img [src]="group.img"></ion-img>
+    <ion-chip *ngIf="group.live" class="statusLive" mode="ios">
+      <ion-label>LIVE</ion-label>
+    </ion-chip>
+  </ion-avatar>
+  <ion-text class="ion-margin-start">
+    <ion-label class="text1">{{ group.title | titlecase }}</ion-label>
+    <ion-label class="text3" color="medium">{{ group.lastMessage }}</ion-label>
+    <ion-label class="text3" color="medium"
+      >{{ group.participants }} participants</ion-label
+    >
+  </ion-text>
+</ion-item>

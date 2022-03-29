@@ -1,0 +1,33 @@
+ion-item {
+  --background: #ffffff;
+  --border-radius: 18px;
+  --min-height: 83px;
+  margin-bottom: 15px;
+  ion-avatar {
+    padding: 2px;
+    width: 49.91px;
+    height: 49.91px;
+    ion-chip {
+      position: relative;
+      bottom: 12px;
+      right: 0;
+      border-radius: 16.5px;
+      height: 14px;
+      --background: var(--ion-color-danger);
+      --color: var(--ion-color-danger-contrast);
+      ion-label {
+        font-size: 8px;
+        font-weight: 600;
+      }
+    }
+  }
+  ion-text {
+    ion-label {
+      padding: 2.5px 0 2.5px 0;
+    }
+  }
+}
+
+.border {
+  border: 1px solid var(--ion-color-primary-tint);
+}
