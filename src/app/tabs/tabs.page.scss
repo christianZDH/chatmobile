@@ -1,1 +1,19 @@
+ion-avatar {
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+  ion-img {
+    filter: saturate(0);
+  }
+}
 
+.profileSelected {
+  ion-img {
+    filter: saturate(1);
+  }
+  ion-avatar {
+    border: 1px solid var(--ion-color-primary);
+  }
+
+  --color: var(--ion-color-primary);
+}
