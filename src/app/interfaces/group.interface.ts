@@ -3,6 +3,7 @@ export interface GroupI {
   img: string;
   live: boolean;
   participants: number;
+  lastMessage: string;
 }
 
-export type GroupVerticalSlideI = Omit<GroupI, 'participants'>;
+export type GroupVerticalSlideI = Omit<GroupI, 'participants' | 'lastMessage'>;
