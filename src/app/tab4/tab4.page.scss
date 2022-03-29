@@ -1,0 +1,26 @@
+ion-item {
+  margin: 2.5px 0 2.5px 0;
+  border-radius: 8px;
+  ion-avatar {
+    width: 62px;
+    height: 62px;
+  }
+}
+
+ion-card {
+  border-radius: 16px;
+  box-shadow: rgba(148, 148, 148, 0.12) 8px 8px 8px 8px;
+}
+
+ion-toggle {
+  height: 21px;
+  width: 34px;
+  --handle-height: 17px;
+  --handle-width: 17px;
+}
+
+.line {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid var(--ion-color-secondary-shade);
+}
